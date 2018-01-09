@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="#ef5350">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.01">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/icon"
+            android:id="@+id/icon"
+            android:onClick="onClick"
+            android:layout_gravity="left"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/back"
+            android:ems="12"
+            android:text="국립국어원으로 이동하기"
+            android:textSize="21dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/button_click"
+            android:id="@+id/search"
+            android:onClick="onClick"
+            android:layout_gravity="right"
+
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08">
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/dictionoff"
+            android:scaleType="fitCenter"
+            android:id="@+id/diction"
+            android:onClick="onClick"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            />
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quizoff"
+            android:scaleType="fitCenter"
+            android:id="@+id/quiz"
+            android:onClick="onClick"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/noteon"
+            android:scaleType="fitCenter"
+            android:id="@+id/note"
+            android:onClick="onClick"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.01">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="3dp"
+            android:src="@drawable/back"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="235dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/back">
+
+        <Button
+            android:id="@+id/load_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="불러오기"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="저장"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/memo_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_layout"
+        android:hint="메모할 내용을 입력하세요."
+        android:gravity="top"
+        android:background="@android:drawable/edit_text" />
+
+</LinearLayout>

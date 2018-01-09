@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="#ef5350">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.01">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/icon"
+            android:id="@+id/icon"
+            android:onClick="onClick"
+            android:layout_gravity="left"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/back"
+            android:ems="12"
+            android:text="국립국어원으로 이동하기"
+            android:textSize="21dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="6dp"
+
+            android:background="@drawable/button_click"
+            android:id="@+id/search"
+            android:onClick="onClick"
+            android:layout_gravity="right"
+
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.08">
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/dictionoff"
+            android:scaleType="fitCenter"
+            android:id="@+id/diction"
+            android:onClick="onClick"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            />
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quizon"
+            android:scaleType="fitCenter"
+            android:id="@+id/quiz"
+            android:onClick="onClick"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/noteoff"
+            android:scaleType="fitCenter"
+            android:id="@+id/note"
+            android:onClick="onClick"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.01">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="3dp"
+            android:src="@drawable/back"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.83"
+        android:background="@drawable/back">
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/WebView"
+            ></WebView>
+
+    </LinearLayout>
+
+</LinearLayout>
